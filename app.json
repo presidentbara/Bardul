@@ -1,0 +1,37 @@
+{
+  "name": "Get File Bot",
+  "description": "A Telegram Bot For Getting Private Content or From File Sharing Bot",
+  "keywords": [
+    "heroku",
+    "bot",
+    "telegram"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Get From my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get From my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Get from https://t.me/BotFather",
+      "required": true
+    },
+    "SESSION_NAME": {
+      "description": "Get Session For Pyrogram, Store here",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Kirim id mu disini",
+      "required": true
+    }
+  },
+  "stack": "heroku-20",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
